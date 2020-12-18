@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<h4>Fruits</h4>
+<div *ngFor="let fruit of fruits">
+  <span>{{fruit.name}}</span>
+  <span> - </span>
+  <span [ngSwitch]="fruit.colour">
+    <span *ngSwitchCase="'red'" style="background: red;"> red </span>
+    <span *ngSwitchCase="'yellow'" style="background: yellow;"> yellow </span>
+    <span *ngSwitchDefault> unknown </span>
+  </span>
+</div>
