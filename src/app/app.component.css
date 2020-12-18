@@ -1,3 +1,11 @@
 p {
   font-family: Lato;
 }
+
+span {
+  font-family: Lato;
+}
+
+.coloured {
+  padding: 0 4px;
+}
